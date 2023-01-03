@@ -49,12 +49,12 @@ var generatePassword = function() {
     }
   }
 
-  // Create a random generator for character types selected and chose number of characters required
+  // Create a random generator for character types selected by user and chose random characters for the number of characters required
   for (var i = 0; i < confirmLength; i++) {
     randomPassword = randomPassword + passwordCharacters[Math.floor(Math.random() * confirmLength)];
   }
 
-  // Display password on screen 
+  // Display random characters as password on screen to be copied 
   function writePassword() {
     var password = generatePassword();
     var passwordText = document.querySelector("#password")
